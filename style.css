@@ -1,6 +1,12 @@
 *{
     box-sizing: border-box;
 }
+.flex-container{
+    display: flex;
+    background-color: aqua;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
 .item{
     background: orange;
     border:1px solid #000000;
@@ -9,10 +15,11 @@
     padding:10px;
     text-align: center;;
     border-radius:10px;
+    flex:1;
 }
-.flex-container{
-    display: flex;
-    background-color: aqua;
-    flex-direction: row;
-    flex-wrap: wrap;
+.item-2{
+    /* flex-basis: 500px; */
+    /* flex-shrink: 3; */
+    /* flex-grow: 3; */
+    flex:2;
 }
