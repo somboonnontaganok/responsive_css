@@ -1,31 +1,12 @@
-.grid-container{
-    display: grid;  
-    /* grid-template-columns: 1fr 3fr; */
-    /* grid-template-rows: 3fr 5fr 2fr; */
-    grid-template: 
-    'header header' 3fr
-    'sidebar content' 10fr
-    'footer footer' 2fr
-    / 1fr 4fr; /*columns*/
-}
-
-.header-item{
-    background-color: greenyellow;
-    grid-area: header;
-}
-
-.content-item{
+p{
     background-color: orange;
-    grid-area: content;
+}
+/* descendants selector */
+div p{
+    background-color: greenyellow;
 }
 
-.footer-item{
-    background-color: black;
-    color: white;
-    grid-area: footer;
-}
-.sidebar-item{
-    background-color: blue;
-    color: white;
-    grid-area: sidebar;
+/* child selector */
+div>p{
+    background-color: yellow;;
 }
