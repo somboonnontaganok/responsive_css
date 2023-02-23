@@ -1,9 +1,23 @@
-input[type="email"], input[type="text"]{
-    width: 80%;
-    margin: 5px
+li{
+    padding: 0.25rem;
+    margin:0.25rem;
+    list-style: none;
 }
-input[type="submit"]{
-    color: white;
+li:first-child{
     background-color: red;
-    border-radius: 10px;
+}
+li:last-child{
+    background-color: orange;
+}
+/* li:nth-child(3n+1){
+    background-color: green;
+}
+li:nth-child(4){
+    background-color: cyan;
+} */
+li:nth-child(odd){
+    background-color: blue;
+}
+li:nth-child(even){
+    background-color: yellow;
 }
