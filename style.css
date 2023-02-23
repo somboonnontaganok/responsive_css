@@ -1,11 +1,9 @@
-a{
-    background-color: orange;
+input[type="email"], input[type="text"]{
+    width: 80%;
+    margin: 5px
 }
-a[target]{
+input[type="submit"]{
+    color: white;
     background-color: red;
-    color: white;
-}
-a[target="_blank"]{
-    background-color: black;
-    color: white;
+    border-radius: 10px;
 }
