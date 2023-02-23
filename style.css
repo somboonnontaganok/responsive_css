@@ -1,3 +1,23 @@
-h1{
-    text-shadow:2px 2px 20px black; /* x y blur color */
+body{
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.box{
+    background: white;
+    width: 100px;
+    height: 100px;
+    /* transition-property: background;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 2s; */
+    /* transition: background 0.5s, width 2s, border-radius 2s ease-in 0.5s; */
+    transition: all 2s ease-in 0.5s
+}
+.box:hover{
+    background-color: red;
+    width: 300px;
+    border-radius: 50%;
 }
