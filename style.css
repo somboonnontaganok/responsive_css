@@ -1,12 +1,11 @@
-p{
+a{
     background-color: orange;
 }
-/* descendants selector */
-div p{
-    background-color: greenyellow;
+a[target]{
+    background-color: red;
+    color: white;
 }
-
-/* child selector */
-div>p{
-    background-color: yellow;;
+a[target="_blank"]{
+    background-color: black;
+    color: white;
 }
