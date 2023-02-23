@@ -3,7 +3,7 @@
     /* grid-template-rows: 100px 200px 300px; */
     grid-template-rows: repeat(3,100px);
     /* grid-template-columns: 200px 200px 200px; */
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
 }
 .item{
     padding: 3rem;
@@ -15,12 +15,6 @@
 }
 .item:first-child{
     background-color: green;
-    /* grid-column-start: 1;
-    grid-column-end: 4; */
-    grid-column: 1/4;
-}
-
-.item:last-child{
-    background-color: pink;
-    grid-column:1/4;
+    grid-row: 1/span 2;
+    grid-column: 1/span 3;
 }
