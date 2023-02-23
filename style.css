@@ -1,23 +1,21 @@
 body{
-    background: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    background-color: #333;
 }
 .box{
-    background: white;
+    background-color: white;
     width: 100px;
-    height: 100px;
-    /* transition-property: background;
-    transition-duration: 2s;
-    transition-timing-function: ease-in;
-    transition-delay: 2s; */
-    /* transition: background 0.5s, width 2s, border-radius 2s ease-in 0.5s; */
-    transition: all 2s ease-in 0.5s
+    height: 100px; 
+    animation-name: animate1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+     animation-direction: alternate;
+    animation-timing-function: ease-in;
 }
-.box:hover{
-    background-color: red;
-    width: 300px;
-    border-radius: 50%;
+@keyframes animate1 {
+    from{
+        width: 100px;
+    }
+    to{
+        width: 400px;
+    }
 }
